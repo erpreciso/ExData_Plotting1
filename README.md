@@ -1,3 +1,9 @@
+# Description
+Implementation of assignment 1 of course **Exploratory Data Analysis by Roger D. Peng, PhD, Jeff Leek, PhD, Brian Caffo, PhD | Coursera**
+Content: 4 R scripts and their 4 output PNG files
+
+
+# Assignment specs
 ## Introduction
 
 This assignment uses data from

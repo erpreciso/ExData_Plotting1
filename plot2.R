@@ -1,4 +1,4 @@
-
+# create plot2 graph
 # read data
 data <- read.table(unz("exdata_data_household_power_consumption.zip", "household_power_consumption.txt"), header = TRUE, sep = ";", stringsAsFactors = FALSE)
 # convert date and time in timestamp
@@ -12,11 +12,9 @@ ds <- ds[!ds$Global_active_power == "?",]
 # select data to plot
 ap <- as.numeric(ds$Global_active_power)
 # create device
-png(file = "out/plot2.png", bg = "transparent")
-# create ploy
+png(file = "plot2.png", bg = "transparent")
+# create plot
 plot(ds$timestamp, ap, type = "n", ylab = "Global Active Power (kilowatts)", xlab = "")
 lines(ds$timestamp, ap, type = "l")
 # close device
 dev.off()
-
-

@@ -1,4 +1,4 @@
-
+# create plot1 graph
 # read data
 data <- read.table(unz("exdata_data_household_power_consumption.zip", "household_power_consumption.txt"), header = TRUE, sep = ";", stringsAsFactors = FALSE)
 # convert date and time in timestamp
@@ -11,7 +11,7 @@ ds <- data[data$timestamp > lb & data$timestamp < ub,]
 # select data to plot
 ap <- as.numeric(ds$Global_active_power)
 # create device
-png(file = "out/plot1.png", bg = "transparent")
+png(file = "plot1.png", bg = "transparent")
 # create histogram
 hist(ap, breaks = 20, col = "red", xlab = "Global Active Power (kilowatts)", main = "Global Active Power")
 # close device
